@@ -14,12 +14,36 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
 }
-#food-items img{
-    /* width: 200px; */
-    /* justify-content: center; */
-}
+
 .card img,
 .card h2{
     width: 300px;
     margin: 0 auto;
+    border-radius: 1em;
+    
+}
+.allInfo{
+    width: 400px;
+    margin: 0 auto;
+}
+.allInfo img{
+    width: 400px;
+    border-radius: 2em;
+}
+#food-details{
+    background-color: lightpink;
+    border-radius: 2em;
+    margin-bottom: 3em;
+    padding: 10px;
+    display: none;
+}
+.card{
+    border-radius: 1em;
+    margin-bottom: 3em;
+    padding: 10px;
+    align-items: center;
+}
+.allInfo h2{
+    text-align: center;
+    font-size: 21px;
 }
