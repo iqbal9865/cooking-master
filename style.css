@@ -16,8 +16,8 @@ body{
 }
 
 .card img,
-.card h2{
-    width: 300px;
+.card h3{
+    width: 280px;
     margin: 0 auto;
     border-radius: 1em;
     
@@ -38,8 +38,8 @@ body{
     display: none;
 }
 .card{
-    border-radius: 1em;
-    margin-bottom: 3em;
+    border-radius: 10px!important;
+    margin-bottom: 1em;
     padding: 10px;
     align-items: center;
 }

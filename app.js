@@ -9,11 +9,20 @@ const getMeal = () => {
             data.meals.forEach(item => {
                 let ItemDiv = document.createElement('div');
                 let Meals = ` <img src="${ item.strMealThumb }" onclick = "showIntegrate(${ item.idMeal })">
-                        <h2 onclick = "showIntegrate(${ item.idMeal })"> ${item.strMeal} <h2> `;
+                        <h3 onclick = "showIntegrate(${ item.idMeal })"> ${item.strMeal} <h3> `;
                 ItemDiv.className = 'card';
                 ItemDiv.innerHTML = Meals;
                 foodItem.appendChild(ItemDiv);
             });
+           
+        })
+        .catch(error => {
+            document.getElementById('food-items').innerHTML= '';
+            document.getElementById('food-details').innerHTML = '';
+            const foodItems = document.getElementById('food-items');
+            const errorMessage = document.createElement('h2');
+            errorMessage.innerHTML = 'SomeThing is Wrong! Please Try letter!';
+            foodItems.appendChild(errorMessage);
         })
 }
 const showIntegrate = (mealId) => {
